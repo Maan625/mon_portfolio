@@ -1,0 +1,25 @@
+body{
+    background-color:$secondary;
+}
+
+.nav-link{
+    background-color: $secondary;
+    color: $light;
+    width: 100px;
+    text-align: center;
+    padding:10px;
+    margin-right: 40px;
+    border-radius: 30px;
+    border: 1px solid $light;
+}
+
+.nav-link:hover{
+    background-color: $evenement;
+    color: $secondary;
+    width: 100px;
+    text-align: center;
+    padding:10px;
+    margin-right: 40px;
+    border-radius: 30px;
+    border: 1px solid $black;
+}

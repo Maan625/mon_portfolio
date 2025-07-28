@@ -11973,4 +11973,29 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+body {
+  background-color: #00162B;
+}
+
+.nav-link {
+  background-color: #00162B;
+  color: #f8f9fa;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 40px;
+  border-radius: 30px;
+  border: 1px solid #f8f9fa;
+}
+
+.nav-link:hover {
+  background-color: #f2f2f2;
+  color: #00162B;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 40px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+}/*# sourceMappingURL=style.css.map */
