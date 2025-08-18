@@ -12015,6 +12015,8 @@ body {
 
 .navbar-brand {
   animation: translate 1s ease-in-out;
+  color: #154875;
+  font-weight: bold;
 }
 
 .titre_portfolio {
@@ -12034,6 +12036,7 @@ body {
 .main {
   background-image: url("../image de fond -home.avif");
   padding: 40px;
+  background-size: cover;
 }
 
 .titre {
@@ -12167,7 +12170,7 @@ body {
   background-image: radial-gradient(circle at 50% 50%, #ff0 0%, transparent 50%), radial-gradient(circle at 45% 45%, #f00 0%, transparent 45%), radial-gradient(circle at 55% 55%, #0ff 0%, transparent 45%), radial-gradient(circle at 45% 55%, #0f0 0%, transparent 45%), radial-gradient(circle at 55% 45%, #00f 0%, transparent 45%);
   -webkit-mask: radial-gradient(circle at 50% 50%, transparent 0%, transparent 10%, black 25%);
           mask: radial-gradient(circle at 50% 50%, transparent 0%, transparent 10%, black 25%);
-  animation: transform-animation 2s infinite alternate, opacity-animation 4s infinite;
+  animation: transform-animation 10s infinite alternate, opacity-animation 10s infinite;
   animation-timing-function: cubic-bezier(0.6, 0.8, 0.5, 1);
 }
 
@@ -12253,6 +12256,11 @@ body {
     opacity: 0;
   }
 }
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 @keyframes translate {
   0% {
     transform: translateX(-1000px);
@@ -12268,4 +12276,319 @@ body {
   100% {
     transform: translateX(0px);
   }
+}
+.compètences_techniques {
+  animation: translate1 1s ease-in-out;
+}
+
+@keyframes translate1 {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+body {
+  background-color: #154875;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#link1 {
+  background-color: #f8f9fa;
+  border: 1px solid #00162B;
+  color: #00162B;
+}
+
+#link1:hover {
+  background-color: #00162B;
+  color: #f8f9fa;
+}
+
+.nav-link {
+  background-color: #00162B;
+  color: #f8f9fa;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 40px;
+  border-radius: 30px;
+  border: 1px solid #f8f9fa;
+  animation: translate 1s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #f8f9fa;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 40px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+}
+
+.navbar-brand {
+  animation: translate 1s ease-in-out;
+}
+
+#titre_competence {
+  color: #FAC925;
+  margin-left: 20px;
+  margin-bottom: 90px;
+}
+
+.compètences_techniques {
+  color: #f8f9fa;
+  width: 600px;
+  margin-left: 100px;
+}
+
+.compètences_techniques ul li {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #000;
+  padding: 10px;
+}
+
+#titre_outils {
+  color: #FAC925;
+  margin-left: 20px;
+}
+
+.Outils {
+  color: #f8f9fa;
+  width: 600px;
+}
+
+.Outils ul li {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .compètences_techniques {
+    width: 100%;
+    margin: 0;
+  }
+  .Outils {
+    width: 100;
+  }
+  .personnelles {
+    width: 100;
+  }
+}
+.personnelles {
+  color: #f8f9fa;
+  width: 600px;
+}
+
+.personnelles ul li {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#titre_personnelles {
+  color: #FAC925;
+  margin-left: 20px;
+}
+
+.langues {
+  color: #f8f9fa;
+  width: 600px;
+}
+
+.langages ul li {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#titre_langues {
+  color: #FAC925;
+  margin-left: 20px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#darkModeToggle {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #00162B;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 0px;
+  right: 5px;
+  z-index: 9999;
+}
+
+.section_competence_technique {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 50px;
+}
+
+.langages {
+  animation: rotate 2s ease-in-out;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .langages {
+    margin-left: 0;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img_competence {
+  transition: transform 0.5s ease-in-out;
+}
+
+.img_competence:hover {
+  transform: rotate(360deg);
+}
+
+.img_competence1 {
+  transition: transform 0.5s ease-in-out;
+  width: 100px;
+}
+
+.img_competence1:hover {
+  transform: rotate(360deg);
+}
+
+.img_competence_html {
+  margin-left: 110px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img_competence_html:hover {
+  transform: rotate(360deg);
+}
+
+.img_competence_json {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease-in-out;
+  margin-left: 80px;
+}
+
+.img_competence_json:hover {
+  transform: rotate(360deg);
+}
+
+.img_competence_vue {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease-in-out;
+  margin-left: 20px;
+}
+
+.img_competence_vue:hover {
+  transform: rotate(360deg);
+}
+
+.img_competence_js {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img_competence_js:hover {
+  transform: rotate(360deg);
+}
+
+.img_competence_bootstrap {
+  width: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img_competence_bootstrap:hover {
+  transform: rotate(360deg);
+}
+
+.titre_projets {
+  margin-top: 50px;
+  color: #FAC925;
+}
+
+.description_newsletter {
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.images_newsletter {
+  border: 3px solid #154875;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.main_newsletter {
+  background-color: #00162B;
+}
+
+a {
+  text-decoration: none;
+  color: #FAC925;
+}
+
+#button_code {
+  background-color: #154875;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+#button_projet {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+}
+
+#button_code:hover {
+  background-color: #FFFFFF;
+}
+#button_code:hover a:hover {
+  color: #154875;
+}
+
+#button_projet:hover {
+  background-color: #154875;
+}
+#button_projet:hover a:hover {
+  color: #FAC925;
+}
+
+.button_newsletter {
+  margin: 10px;
+}
+
+.titre_projets {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
