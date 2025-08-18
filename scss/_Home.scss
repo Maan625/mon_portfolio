@@ -6,14 +6,17 @@
  #link1 {
    background-color: $light;
    border: 1px solid $secondary;
-   color: $secondary
+   color: $secondary;
+   
  }
 
  #link1:hover {
    background-color: $secondary;
    color: $light;
 
+
  }
+
 
  .nav-link {
    background-color: $secondary;
@@ -39,6 +42,20 @@
    margin-right: 40px;
    border-radius: 30px;
    border: 1px solid $black;
+ }
+  @media screen and (max-width: 600px) {
+   .nav-link {
+      margin: 10px;
+      width: 100%;
+
+   }  
+   .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+ 
+  
  }
 
  .navbar-brand {
