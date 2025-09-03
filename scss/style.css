@@ -12370,17 +12370,25 @@ body {
 #titre_outils {
   color: #FAC925;
   margin-left: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .Outils {
   color: #f8f9fa;
-  width: 600px;
+  height: 400px;
+  background-image: url(https://media.istockphoto.com/id/852200124/fr/photo/aurora.jpg?s=1024x1024&w=is&k=20&c=VVc9UzzXp5Iq99Re5OTVtqpd3ObB0jHeL4ArKPq0TkU=);
+  background-size: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  font-weight: bold;
 }
 
 .Outils ul li {
   margin: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.5;
+  padding: 20px 0 0 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -12397,29 +12405,40 @@ body {
 }
 .personnelles {
   color: #f8f9fa;
-  width: 600px;
+  height: 400px;
+  background-image: url(https://media.istockphoto.com/id/2152515127/fr/photo/aurores-australes-sur-le-lac-te-anau.jpg?s=1024x1024&w=is&k=20&c=hYF7EOLlpk56SlkZD8hVMHddRzgfSzYISDGFG52mQ3g=);
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
 }
 
 .personnelles ul li {
   margin: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.5;
+  padding: 10px 0 0 0;
 }
 
 #titre_personnelles {
   color: #FAC925;
   margin-left: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .langues {
   color: #f8f9fa;
-  width: 600px;
+  padding: 10px;
+  background-image: url(https://media.istockphoto.com/id/1498143216/fr/photo/de-belles-aurores-bor%C3%A9ales-vues-dislande-la-nuit-dans-un-grand-lac.jpg?s=1024x1024&w=is&k=20&c=ZgeCzouZCPN9by0s-qddaoWHHv_sB_NMj4QSopmre-s=);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .langages ul li {
-  margin: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.5;
+  list-style-type: none;
 }
 
 #titre_langues {
