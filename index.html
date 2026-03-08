@@ -1,128 +1,367 @@
-<!DOCTYPE html>
-<html lang="en">
-
+ <!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maan Al Ali | Développeur Web</title>
 
-    <link rel="stylesheet" href="scss/style.css">
-    <title>portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="scss/style.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light position-fixed w-100  shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"> MAAN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0  p-sm-2 ">
-                        <li class="nav-item">
-                            <a id="link1" class="nav-link " href="#"> Accueil</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="scss/projets.html"> Projets</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="scss/compètence.html">Compétences</a>
-                        </li>
 
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white position-fixed top-0 w-100 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">MAAN</a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/projets.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/competences.html">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-dark rounded-pill px-4" href="assets/cv/cv-maan-al-ali.pdf" target="_blank">
+                Mon CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                </div>
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6">
+            <span class="badge rounded-pill text-bg-dark mb-3">Disponible pour une opportunité</span>
+
+            <h1 class="display-4 fw-bold mb-3">
+              Maan Al Ali
+            </h1>
+
+            <h2 class="h4 text-secondary mb-4">
+              Développeur Web et Web Mobile (Bac+2)
+            </h2>
+
+            <p class="lead text-secondary mb-4">
+              Développeur web passionné par la création de sites modernes, responsives et performants.
+              Diplômé de la formation Développeur Web et Web Mobile,
+              je conçois des interfaces web claires et professionnelles.
+            </p>
+
+            <p class="text-secondary mb-4">
+              Curieux, rigoureux et motivé, je souhaite intégrer une équipe pour contribuer à des projets concrets,
+              continuer à progresser techniquement et apporter une vraie valeur à travers mon travail.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="pages/projets.html" class="btn btn-dark btn-lg rounded-pill px-4">
+                Voir mes projets
+              </a>
+              <a href="#apropos" class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                En savoir plus
+              </a>
             </div>
-        </nav>
+          </div>
 
-    </header>
-    <main class="main">
-
-        <div class="en_savoir">
-            <h4 class="titre4 mb-5 text-light fw-bold">Derrière chaque développeur, il y a une histoire. Découvrez la
-                mienne
-            </h4>
-            <button id="button_savoir"> Cliquez pour en savoir plus</button>
-
-        </div>
-
-        <div class="titre_portfolio">
-            <!-- <h1 class="titre">A propre de moi</h1> -->
-
-            <p> Je m'appelle Maan Al Ali, développeur web et web mobile en formation au centre AFEC à Lyon.
-                Titulaire d’une licence en électronique et télécommunication de l’Université de Damas, je suis passionné
-                par la programmation, les nouvelles technologies et les systèmes connectés.
-                Après plusieurs expériences professionnelles variées – allant de l’installation de caméras de
-                surveillance à l’assistance humanitaire avec la Croix-Rouge – j’ai su développer une forte capacité
-                d’adaptation, de rigueur et d'autonomie.
-                Aujourd’hui, je cherche un stage de 8 semaines (du 13/10/2025 au 05/12/2025) pour mettre en pratique mes
-                compétences et apprendre davantage au sein d’une équipe professionnelle.
-                Curieux, persévérant et motivé, je suis prêt à relever de nouveaux défis techniques et à contribuer
-                activement à vos projets.</p>
-
-
-        </div>
-        <div class="loader-wrapper">
-            <span class="loader-letter">M</span>
-            <span class="loader-letter">A</span>
-            <span class="loader-letter">A</span>
-            <span class="loader-letter">N</span>
-            <span class="loader-letter">A</span>
-            <span class="loader-letter">L</span>
-            <span class="loader-letter">A</span>
-            <span class="loader-letter">L</span>
-            <span class="loader-letter">I</span>
-
-            <div class="loader"></div>
-        </div>
-
-    </main>
-    <footer>
-        <section class="footer">
-            <div class="row mx-auto  justify-content-md-around  justify-content-sm-center text-sm-center">
-                <div class="col-md-4 text-center">
-                    <h3 class="titre_footer mb-3">Contact</h3>
-                    <p class="para_contact"><i class="bi bi-telephone-fill"></i> 0644898725</p>
-                    <a href="mailto:maannada55555@gmail.com" class="para_contact  text-decoration-none"><i
-                            class="bi bi-envelope-fill"></i> maannada55555@gmail.com</a>
-                    <p class="para_contact"><i><i class="bi bi-geo-alt-fill"></i> 56 rue baudin , Saint- Etienne</i></p>
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                  <div class="profile-card text-center shadow rounded-4 p-3 bg-white">
+                    <img src="WhatsApp Image 2026-03-08 at 16.52.31.jpeg" alt="Photo de Maan Al Ali" class="img-fluid profile-img">
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="titre_footer ">Mes liens</h3>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-github"></i> <a href="https://github.com/Maan625">Github</a></li>
-                        <li><i class="bi bi-linkedin"></i> <a
-                                href="https://www.linkedin.com/in/maen-al-ali-2b1345331/">Linkedin</a></li>
-                        <li><i class="bi bi-facebook"></i> <a
-                                href="https://www.facebook.com/share/179i1LUrNY/?mibextid=wwXIfr"> facebook</a></li>
-                        <li><i class="bi bi-instagram"></i> <a href="#">Instagram</a></li>
 
-                    </ul>
+                <div class="col-md-6">
+                  <div class="hero-card p-4 shadow rounded-4 bg-white h-100">
+                    <h3 class="fw-bold mb-3">Profil rapide</h3>
+
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                      <i class="bi bi-geo-alt-fill fs-5"></i>
+                      <div>
+                        <h6 class="mb-1">Localisation</h6>
+                        <small class="text-secondary">Saint-Étienne</small>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                      <i class="bi bi-mortarboard-fill fs-5"></i>
+                      <div>
+                        <h6 class="mb-1">Formation</h6>
+                        <small class="text-secondary">AFEC Lyon – Développeur Web et Web Mobile</small>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                      <i class="bi bi-code-slash fs-5"></i>
+                      <div>
+                        <h6 class="mb-1">Stack principale</h6>
+                        <small class="text-secondary">HTML, CSS, Bootstrap, SCSS, JavaScript</small>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                      <i class="bi bi-server fs-5"></i>
+                      <div>
+                        <h6 class="mb-1">Back-End</h6>
+                        <small class="text-secondary">PHP, Symfony, SQL / NoSQL</small>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                      <i class="bi bi-translate fs-5"></i>
+                      <div>
+                        <h6 class="mb-1">Langues</h6>
+                        <small class="text-secondary">Arabe, Français (B2), Anglais (B1)</small>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-unstyled_1 text-center">
-                        <li><a href="scss/projets.html">Projets</a></li>
-                        <li><a href="scss/compètence.html">Compétences</a></li>
-                    </ul>
-
-
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-        crossorigin="anonymous"></script>
-    <script src="scss/main.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCES PRINCIPALES -->
+    <section class="py-5" id="competences-home">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-uppercase text-secondary fw-semibold">Compétences</span>
+          <h2 class="fw-bold mt-2">Mes compétences principales</h2>
+          <p class="text-secondary mx-auto" style="max-width: 700px;">
+            Un socle technique solide en intégration web, développement front-end, outils de versioning
+            et bases du back-end pour créer des projets modernes et structurés.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="skill-card p-4 shadow-sm rounded-4 h-100 bg-white">
+              <div class="icon-box mb-3">
+                <i class="bi bi-window fs-3"></i>
+              </div>
+              <h4 class="fw-bold">Front-End</h4>
+              <p class="text-secondary mb-0">
+                HTML5, CSS3, Bootstrap, SCSS, JavaScript, Vue.js
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skill-card p-4 shadow-sm rounded-4 h-100 bg-white">
+              <div class="icon-box mb-3">
+                <i class="bi bi-database fs-3"></i>
+              </div>
+              <h4 class="fw-bold">Back-End & Base de données</h4>
+              <p class="text-secondary mb-0">
+                PHP, Symfony, SQL, NoSQL, XAMPP, PhpMyAdmin
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skill-card p-4 shadow-sm rounded-4 h-100 bg-white">
+              <div class="icon-box mb-3">
+                <i class="bi bi-tools fs-3"></i>
+              </div>
+              <h4 class="fw-bold">Outils & Design</h4>
+              <p class="text-secondary mb-0">
+                Git, GitHub, Visual Studio Code, Figma, Canva
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos" class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <span class="text-uppercase text-secondary fw-semibold">À propos</span>
+            <h2 class="fw-bold mt-2 mb-4">Un parcours technique et humain</h2>
+
+            <p class="text-secondary">
+              Issu d’une licence en électronique et télécommunication à l’Université de Damas,
+              j’ai développé une forte sensibilité pour la technique, la logique et la résolution de problèmes.
+            </p>
+
+            <p class="text-secondary">
+              Mon parcours m’a aussi permis d’acquérir des qualités humaines essentielles comme l’adaptabilité,
+              la persévérance, le sens du service et la capacité à travailler avec sérieux dans différents contextes professionnels.
+            </p>
+
+            <p class="text-secondary mb-0">
+              Aujourd’hui, je souhaite évoluer dans le domaine du développement web,
+              participer à des projets concrets et continuer à renforcer mes compétences au sein d’une équipe professionnelle.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                  <i class="bi bi-people-fill fs-3 mb-3 d-inline-block"></i>
+                  <h5 class="fw-bold">Travail en équipe</h5>
+                  <p class="text-secondary mb-0">Capacité à collaborer efficacement et à m’intégrer rapidement.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                  <i class="bi bi-lightbulb-fill fs-3 mb-3 d-inline-block"></i>
+                  <h5 class="fw-bold">Créativité</h5>
+                  <p class="text-secondary mb-0">Recherche de solutions claires, utiles et modernes.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                  <i class="bi bi-arrow-repeat fs-3 mb-3 d-inline-block"></i>
+                  <h5 class="fw-bold">Adaptabilité</h5>
+                  <p class="text-secondary mb-0">À l’aise dans des contextes professionnels variés.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                  <i class="bi bi-stars fs-3 mb-3 d-inline-block"></i>
+                  <h5 class="fw-bold">Persévérance</h5>
+                  <p class="text-secondary mb-0">Motivé à progresser et à relever de nouveaux défis techniques.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE RAPIDE -->
+    <section class="py-5" id="experience">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-uppercase text-secondary fw-semibold">Expérience</span>
+          <h2 class="fw-bold mt-2">Parcours et expériences</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="experience-card p-4 rounded-4 shadow-sm h-100 bg-white">
+              <span class="badge text-bg-light mb-3">04/2024 - 05/2024</span>
+              <h5 class="fw-bold">Stagiaire Développeur Web</h5>
+              <p class="text-secondary fw-semibold mb-2">SASU VIVICORSI – Saint-Étienne</p>
+              <p class="text-secondary mb-0">
+                Développement de sites web et participation à la réalisation d’un site vitrine e-commerce.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="experience-card p-4 rounded-4 shadow-sm h-100 bg-white">
+              <span class="badge text-bg-light mb-3">10/2023 - 01/2024</span>
+              <h5 class="fw-bold">Bénévolat</h5>
+              <p class="text-secondary fw-semibold mb-2">Croix-Rouge Français</p>
+              <p class="text-secondary mb-0">
+                Distribution d’aide aux personnes et participation à des actions de soutien sur le terrain.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="experience-card p-4 rounded-4 shadow-sm h-100 bg-white">
+              <span class="badge text-bg-light mb-3">03/2021 - 01/2023</span>
+              <h5 class="fw-bold">Technicien de caméra de surveillance</h5>
+              <p class="text-secondary fw-semibold mb-2">Freelance – Égypte</p>
+              <p class="text-secondary mb-0">
+                Installation de systèmes de surveillance pour maisons, immeubles et commerces avec équipement complet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <p class="mb-2">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:nadamaan55555@gmail.com" class="text-white text-decoration-none">
+              nadamaan55555@gmail.com
+            </a>
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>
+            0644898725
+          </p>
+          <p class="mb-0">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            Saint-Étienne
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Liens utiles</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="pages/projets.html" class="text-white text-decoration-none">Projets</a>
+            </li>
+            <li class="mb-2">
+              <a href="pages/competences.html" class="text-white text-decoration-none">Compétences</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://github.com/Maan625" target="_blank" class="text-white text-decoration-none">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/maen-al-ali-2b1345331/" target="_blank" class="text-white text-decoration-none">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Objectif</h5>
+          <p class="mb-0 text-white-50">
+            Rejoindre un environnement professionnel stimulant pour développer mes compétences,
+            participer à des projets web concrets et évoluer comme développeur web.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
