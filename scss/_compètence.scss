@@ -1,299 +1,165 @@
-body {
-  background-color: $tertiary;
-}
+/* =========================
+   PAGE COMPÉTENCES
+========================= */
 
-body {
-  margin: 0;
-  padding: 0;
-}
+.skills-hero {
+  padding: 140px 0 80px;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
 
-#link1 {
-  background-color: $light;
-  border: 1px solid $secondary;
-  color: $secondary;
-}
-
-#link1:hover {
-  background-color: $secondary;
-  color: $light;
-}
-
-.nav-link {
-  background-color: $secondary;
-  color: $light;
-  font-size: 14px;
-  width: 100px;
-  text-align: center;
-  padding: 10px;
-  margin-right: 40px;
-  border-radius: 30px;
-  border: 1px solid $light;
-  animation: translate 1s ease-in-out;
-}
-
-.nav-link:hover {
-  background-color: $light;
-  // color: $secondary;
-  width: 100px;
-  text-align: center;
-  padding: 10px;
-  margin-right: 40px;
-  border-radius: 30px;
-  border: 1px solid $black;
-}
-
-.navbar-brand {
-  animation: translate 1s ease-in-out;
-}
-
-#titre_competence {
-  color: $button;
-  margin-left: 20px;
-  // margin-top:400px ;
-  margin-bottom: 90px;
-}
-
-.compètences_techniques {
-  color: $light;
-  width: 600px;
-  margin-left: 100px;
-}
-
-.compètences_techniques ul li {
-  margin: 10px 0;
-  font-size: 15px;
-  line-height: 1.5;
-  background-color: #000;
-  padding: 10px;
-}
-
-#titre_outils {
-  color: $button;
-  margin-left: 20px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.Outils {
-  color: $light;
-  height: 400px;
-  background-image: url(https://media.istockphoto.com/id/852200124/fr/photo/aurora.jpg?s=1024x1024&w=is&k=20&c=VVc9UzzXp5Iq99Re5OTVtqpd3ObB0jHeL4ArKPq0TkU=);
-  background-size: 100%;
-  object-fit: fill;
-  // background-position: center;
-  font-weight: bold;
-}
-
-.Outils ul li {
-  margin: 10px 0;
-  font-size: 20px;
-  line-height: 1.5;
-  padding: 20px 0 0 0;
-}
-
-@media screen and (max-width: 600px) {
-  .compètences_techniques {
-    width: 100%;
-    margin: 0;
+  .badge {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    letter-spacing: 0.4px;
+    border-radius: 999px;
   }
 
-  .Outils {
-    width: 100;
+  h1 {
+    font-size: 2.8rem;
+    color: #0f172a;
   }
 
-  .personnelles {
-    width: 100;
-  }
-}
-
-.personnelles {
-  color: $light;
-  height: 400px;
-  background-image: url(https://media.istockphoto.com/id/2152515127/fr/photo/aurores-australes-sur-le-lac-te-anau.jpg?s=1024x1024&w=is&k=20&c=hYF7EOLlpk56SlkZD8hVMHddRzgfSzYISDGFG52mQ3g=);
-  font-weight: bold;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  padding: 20px;
-}
-
-.personnelles ul li {
-  margin: 10px 0;
-  font-size: 20px;
-  line-height: 1.5;
-  padding: 10px 0 0 0;
-  //   list-style-type: none;
-}
-
-#titre_personnelles {
-  color: $button;
-  margin-left: 20px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.langues {
-  color: $light;
-  //   width: 600px;
-  padding: 10px;
-  background-image: url(  https://media.istockphoto.com/id/1498143216/fr/photo/de-belles-aurores-bor%C3%A9ales-vues-dislande-la-nuit-dans-un-grand-lac.jpg?s=1024x1024&w=is&k=20&c=ZgeCzouZCPN9by0s-qddaoWHHv_sB_NMj4QSopmre-s=);
-  background-repeat: no-repeat;
-  background-size: cover;
-  //   text-align: center;
-}
-
-.langages ul li {
-  font-size: 20px;
-  line-height: 1.5;
-  list-style-type: none;
-}
-
-#titre_langues {
-  color: $button;
-  margin-left: 20px;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-#darkModeToggle {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: $secondary;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  position: fixed;
-  top: 0px;
-  right: 5px;
-  z-index: 9999;
-}
-.section_competence_technique {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-
-  background-image: url(https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 100px 50px;
-}
-
-.langages {
-  animation: rotate 2s ease-in-out;
-  margin-left: 200px;
-  // background-color: $secondary;
-  // border-radius: 50%;
-  // padding: 30px;
-  // width: 300px;
-  // height: 500px;
-  // text-align: center;
-  // padding-top: 30px;
-  display: flex;
-  // flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 600px) {
-  .langages {
-    // margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  .lead {
+    max-width: 760px;
     margin: 0 auto;
-  }
-  .img_competence_html {
-    margin-right: 0;
+    line-height: 1.8;
   }
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+
+.skills-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.skills-section.bg-light {
+  background: #f8fafc !important;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 28px 24px;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
   }
-  100% {
-    transform: rotate(360deg);
+
+  i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 18px;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+
+  h4,
+  h5 {
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-size: 0.96rem;
   }
 }
-.img_competence {
-  transition: transform 0.5s ease-in-out;
-}
-.img_competence:hover {
-  transform: rotate(360deg);
-  transform: scale(1.1);
-}
-.img_competence1 {
-  transition: transform 0.5s ease-in-out;
-  border-radius: 50%;
 
-  width: 100px;
-}
-.img_competence1:hover {
-  transform: scale(2);
-  // transform: rotate(360deg);
-  border-radius: 50%;
-}
-.img_competence_html {
-  margin-right: 20px;
-  width: 100px;
-  transition: transform 0.5s ease-in-out;
-}
-.img_competence_html:hover {
-  transform: scale(2);
-  // transform: rotate(360deg);
-  border-radius: 50%;
-}
-.img_competence_json {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  transition: transform 0.5s ease-in-out;
-  //  border-radius: 20px;
+.list-languages {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 
-  margin-left: 20px;
-}
-.img_competence_json:hover {
-  // transform: rotate(360deg);
-  //  border-radius: 50%;
-  transform: scale(2);
-}
-.img_competence_vue {
-  width: 100px;
-  height: 100px;
-  transition: transform 0.5s ease-in-out;
-  border-radius: 50%;
-  margin-left: 20px;
-}
-.img_competence_vue:hover {
-  // transform: rotate(360deg);
-  border-radius: 50%;
-  transform: scale(2);
-}
-.img_competence_js {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  li {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+    color: #334155;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    transition: all 0.3s ease;
 
-  transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.09);
+    }
+  }
 }
-.img_competence_js:hover {
-  // transform: rotate(360deg);
-  //  border-radius: 50%;
-  transform: scale(2);
-}
-.img_competence_bootstrap {
-  width: 100px;
-  border-radius: 50%;
 
-  transition: transform 0.5s ease-in-out;
+/* Soft skills cards un peu plus compactes */
+.skills-section .skill-card.text-center {
+  padding: 32px 18px;
+
+  h5 {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+  }
 }
-.img_competence_bootstrap:hover {
-  // transform: rotate(360deg);
-  //  border-radius: 50%;
-  transform: scale(2);
+
+/* Navbar active coherence */
+.navbar .nav-link.active {
+  color: #2563eb !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .skills-hero {
+    padding: 120px 0 60px;
+
+    h1 {
+      font-size: 2.3rem;
+    }
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-hero {
+    padding: 110px 0 50px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .lead {
+      font-size: 1rem;
+    }
+  }
+
+  .skills-section {
+    padding: 65px 0;
+  }
+
+  .skill-card {
+    padding: 24px 20px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
 }
