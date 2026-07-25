@@ -1,81 +1,82 @@
- /* HERO PROJETS */
-
-.projects-hero {
+ .projects-hero {
   padding: 140px 0 80px;
   background: linear-gradient(180deg, #ffffff, #f8fafc);
-
-  .badge {
-    padding: 10px 18px;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-  }
-
-  h1 {
-    font-size: 2.8rem;
-    color: #0f172a;
-  }
-
-  p {
-    max-width: 700px;
-    margin: auto;
-  }
 }
 
+.projects-hero .badge {
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
 
-/* SECTION PROJETS */
+.projects-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  color: #0f172a;
+  letter-spacing: -0.04em;
+}
+
+.projects-hero .lead {
+  max-width: 760px;
+  margin: auto;
+  color: $secondary;
+}
 
 .projects-section {
   background: #ffffff;
 }
 
-
-/* CARD PROJET */
-
 .project-card {
   border: 1px solid #e2e8f0;
   transition: all 0.35s ease;
   overflow: hidden;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-  }
+  display: flex;
+  flex-direction: column;
 }
-
-
-/* IMAGE PROJET */
 
 .project-image {
   position: relative;
   overflow: hidden;
-
-  img {
-    transition: transform 0.4s ease;
-  }
-
-  &:hover img {
-    transform: scale(1.05);
-  }
+  aspect-ratio: 16 / 10;
+  background: $light;
 }
 
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
 
-/* CONTENU */
+.project-card:hover .project-image img {
+  transform: scale(1.04);
+}
 
 .project-content {
-
-  h3 {
-    font-size: 1.4rem;
-    color: #0f172a;
-  }
-
-  p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
+.project-content h3 {
+  font-size: 1.4rem;
+  color: #0f172a;
+}
 
-/* BADGES TECHNO */
+.project-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.project-features {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: $secondary;
+}
+
+.project-features li + li {
+  margin-top: 0.4rem;
+}
 
 .badge-tech {
   background: #f1f5f9;
@@ -85,9 +86,6 @@
   border-radius: 20px;
   font-weight: 500;
 }
-
-
-/* BOUTONS */
 
 .project-content .btn {
   font-size: 0.85rem;
@@ -104,25 +102,18 @@
   color: #fff;
 }
 
-
-/* RESPONSIVE */
+.project-actions {
+  margin-top: auto;
+}
 
 @media (max-width: 991px) {
-
   .projects-hero {
     padding: 120px 0 60px;
   }
-
-  .projects-hero h1 {
-    font-size: 2.2rem;
-  }
-
 }
 
-@media (max-width: 768px) {
-
-  .project-card {
-    margin-bottom: 10px;
+@media (max-width: 575px) {
+  .project-content .btn {
+    flex: 1 1 8rem;
   }
-
 }
